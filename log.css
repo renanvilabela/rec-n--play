@@ -1,1 +1,66 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+header h1{
+    display: block;
+    text-align: center;
+    font-family: 'roboto', bold;
+    color: rgb(120, 37, 179);
+}
+
+header img{
+    display: block;
+    width: 500px;
+    margin: auto auto 10px auto;
+}
+
+div{
+    display: block;
+    background-color: white;
+}
+
+div input{
+    width: 210px;
+    height: 40px;
+    border: 1px solid #B2B2B2;
+    border-radius: 11px;
+    display: block;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'roboto' , italic;
+    text-indent: 15px;
+}
+
+div > button{
+    background-color: indigo;
+    border:1px solid indigo;
+    border-radius: 10px;
+    display: block;
+    width: 210px;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'roboto', bold;
+    text-align: center;
+    padding: 0 20px 0 0;
+}
+
+div > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+div > button > a:hover{
+    text-decoration: underline;
+}
