@@ -7,9 +7,13 @@
     margin: 0;
 }
 
+body{
+    background-image: linear-gradient(to top violet indigo);
+}
+
 h1 {
     display: block;
-    background-color: white;
+    background-image: linear-gradient(to top violet indigo);
     text-align: center;
     font-family: 'roboto', bold;
     color: rgb(120, 37, 179);
