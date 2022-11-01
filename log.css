@@ -21,7 +21,7 @@ header h1{
 
 header img{
     display: block;
-    width: 500px;
+    width: 450px;
     margin: auto auto 10px auto;
 }
 
@@ -38,6 +38,7 @@ div input{
     display: block;
     margin: auto auto 10px auto;
     justify-content: center;
+    text-align: start;
     font-family: 'roboto' , italic;
     text-indent: 15px;
 }
@@ -65,4 +66,21 @@ div > button > a{
 
 div > button > a:hover{
     text-decoration: underline;
+}
+
+footer {
+    display: block;
+}
+
+footer > h4{
+    color: rgb(120, 37, 179);
+    text-align: center;
+    font-family: 'roboto', bold;
+}
+
+footer > a > img{
+    display: block;
+    width: 40px;
+    margin: auto auto auto auto;
+    align-items: center;
 }
