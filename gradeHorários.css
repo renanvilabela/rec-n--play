@@ -10,21 +10,37 @@
 .QdrHCsCOR{
     width: 1263px;
     height: 500px;
-    background: #F5F525;
+    background: black;
     font-family: 'roboto', bold;
 }
 
 .QdrHCs0{
     width: 1263px;
     height: 500px;
-    background: #8A22F5;
+    background: black;
     font-family: 'roboto', bold;
 }
 
 .QdrHCsCOR  h3{
-    color: #45117D;
+    color: rgba(0, 192, 0, 0.87);
+}
+
+.QdrHCsCOR p{
+    color: springgreen;
+}
+
+.QdrHCsCOR h1{
+    color: white;
 }
 
 .QdrHCs0  h3 {
-    color: #F5F4B6;
+    color: green;
+}
+
+.QdrHCs0 p{
+    color: springgreen;
+}
+
+.QdrHCs0 h1{
+    color: white;
 }
