@@ -8,24 +8,39 @@
     <link rel="stylesheet" href="log.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/0c531781-0551-41fb-bbea-e8e950643d73-removebg-preview.png" alt="logo provisória do Show-me!">
-    </header>
 
-    <div>
-        <label for="email"></label>
-        <input id="email" type="text" name="email" placeholder="Seu email">
-        <label for="nome"></label>
-        <input id="nome" type="text" name="nome" placeholder="Seu nome">
-        <button><a href="mapa.html" target="_blank">Login</a></button>
-        <h4>outras formas de Login</h4>
-        <a href="mapa.html" target="proxima tela"><img src="imagens/facebook-logo-2019-1597680-1350125.webp" alt="imagem para login"></a>
-        <a href="mapa.html" target="proxima tela"><img src="imagens/google-160-189824.webp" alt="imagem para login"></a>
-        <a href="mapa.html" target="proxima tela"><img src="imagens/download.png" alt="imagem para login"></a>
+    <div id="base">
+        <br>
+
+        <header>
+            <img src="imagens/logoShowMe.png" alt="logo provisória do Show-me!" id="logoShowMe">
+        </header>
+
+        <br>
+        <br>
+
+        <div class="info-usuario">
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="Seu email" autocomplete="email">
+            <label for="nome"></label>
+            <input id="nome" type="text" name="nome" placeholder="Seu nome" autocomplete="name">
+            <button><a href="mapa.html" target="_blank">Login</a></button>
+            <br>
+            <h4>Outras Formas de Login:</h4>
+            <br>
+        </div>
+    
+        <div class="login-sociais">
+            <a href="mapa.html" target="proxima tela"><img src="imagens/LogoFacebook.webp" alt="login com Facebook"></a>
+            <a href="mapa.html" target="proxima tela"><img src="imagens/LogoGOogle.webp" alt="login com Google"></a>
+            <a href="mapa.html" target="proxima tela"><img src="imagens/LogoGitHub.png" alt="login com GitHub"></a>
+        </div>
+
+        <footer>
+            <img src="imagens/RecNPlaySenac.png" alt="logo senac e rec n' play" id="logoSenacRec">
+         </footer>
+
     </div>
-
-    <footer>
-       <img src="imagens/WhatsApp Image 2022-11-08 at 15.56.57.jpeg" alt="logo senac e rec n' play">
-    </footer>
 </body>
+
 </html>
