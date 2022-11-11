@@ -11,10 +11,10 @@
 }
 
 body {
-    background-image: url(https://i.pinimg.com/originals/10/7c/a9/107ca9a450d92a09b985ec1b3afec282.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/13/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 850px;
     position: relative;
 }
 
@@ -30,10 +30,13 @@ body {
 }
 
 @media screen and (max-width: 350px) {
-    #base {
-        height: 900px;
+    body {
+        height: 1000px;
     }
 }
+
+/* Tela de Login */
+
 
 #logoShowMe {
     width: 280px;
@@ -55,7 +58,7 @@ body {
     text-indent: 15px;
 }
 
-.info-usuario > button{
+.info-usuario button{
     background-color: indigo;
     border:1px solid indigo;
     border-radius: 10px;
@@ -68,18 +71,15 @@ body {
     cursor: pointer;
     font-family: 'roboto', bold;
     text-align: center;
-}
-
-.info-usuario > button > a{
     color: white;
     text-decoration: none;
 }
 
-.info-usuario > button > a:hover{
+.info-usuario button:hover{
     text-decoration: underline;
 }
 
-.info-usuario > h4{
+.info-usuario h4{
     color: rgb(120, 37, 179);
     text-align: center;
     font-family: 'roboto', bold;

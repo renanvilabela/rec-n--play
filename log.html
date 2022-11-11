@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <title>Show-me!</title>
+
     <link rel="stylesheet" href="log.css">
 </head>
 <body>
@@ -12,31 +19,34 @@
     <div id="base">
         <br>
 
-        <header>
+        <header> <!-- Logo do ShowMe -->
             <img src="imagens/logoShowMe.png" alt="logo provisória do Show-me!" id="logoShowMe">
         </header>
 
         <br>
         <br>
 
-        <div class="info-usuario">
-            <label for="email"></label>
-            <input id="email" type="email" name="email" placeholder="Seu email" autocomplete="email">
-            <label for="nome"></label>
-            <input id="nome" type="text" name="nome" placeholder="Seu nome" autocomplete="name">
-            <button><a href="mapa.html" target="_blank">Login</a></button>
+        <div class="info-usuario"> <!-- Campo de Login do Usuario -->
+            <form action="mapa.html">
+                <label for="email"></label>
+                <input id="email" type="email" name="email" placeholder="Seu email" autocomplete="email" required>
+                <label for="nome"></label>
+                <input id="nome" type="text" name="nome" placeholder="Seu nome" autocomplete="name" required>
+                <button type="reset"><strong>Reescrever</strong></button> <!-- Botão para Reescrever -->
+                <button type="submit"><strong>Login</strong></button> <!-- Botão de Login -->
+            </form>
             <br>
             <h4>Outras Formas de Login:</h4>
             <br>
         </div>
     
-        <div class="login-sociais">
+        <div class="login-sociais"> <!-- Outros Metodos de Login -->
             <a href="mapa.html" target="proxima tela"><img src="imagens/LogoFacebook.webp" alt="login com Facebook"></a>
             <a href="mapa.html" target="proxima tela"><img src="imagens/LogoGOogle.webp" alt="login com Google"></a>
             <a href="mapa.html" target="proxima tela"><img src="imagens/LogoGitHub.png" alt="login com GitHub"></a>
         </div>
 
-        <footer>
+        <footer> <!-- Logo Senac e Rec'N'Play -->
             <img src="imagens/RecNPlaySenac.png" alt="logo senac e rec n' play" id="logoSenacRec">
          </footer>
 
