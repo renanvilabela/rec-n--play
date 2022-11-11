@@ -1,46 +1,74 @@
-@charset "UTF-8";
+/* Tela com Grades de Horarios */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
-.QdrHCsCOR{
-    width: 1263px;
-    height: 500px;
-    background: black;
-    font-family: 'roboto', bold;
-}
-
-.QdrHCs0{
-    width: 1263px;
-    height: 500px;
-    background: black;
-    font-family: 'roboto', bold;
-}
-
-.QdrHCsCOR  h3{
-    color: rgba(0, 192, 0, 0.87);
-}
-
-.QdrHCsCOR p{
-    color: springgreen;
-}
-
-.QdrHCsCOR h1{
+h1 {
     color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 3em;
 }
 
-.QdrHCs0  h3 {
-    color: green;
-}
-
-.QdrHCs0 p{
-    color: springgreen;
-}
-
-.QdrHCs0 h1{
+h2 {
     color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h3 {
+    display: flex;
+    float: left;
+    margin-right: 40%;
+}
+
+h4 {
+    margin-left: 10%;
+    font-size: 2em;
+}
+
+p {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+
+.horarios {
+    display: flex;
+    justify-content: center;
+}
+
+.dias {
+    width: 1300px;
+    display: flex;
+    float: left;
+    margin: 50px auto;
+}
+
+#quinta-feira {
+    background-color: yellow;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#sexta-feira {
+    background-color: crimson;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#sabado {
+    background-color: brown;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#domingo {
+    background-color: aqua;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 10px;
 }
