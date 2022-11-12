@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'roboto', bold;
@@ -19,7 +19,7 @@ body {
 }
 
 #base {
-    background-color: black;
+    background-color: #000000;
     margin: 70px auto;
     width: 90%;
     margin-left: 5%;
@@ -30,8 +30,22 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 750px) {
     body {
-        height: 1000px;
+        height: auto;
+        background-image: linear-gradient(to bottom, #616161, #575757, #474747, #313131, #000000);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+}
+
+footer {
+    height: 150px;
+    display: flex;
+}
+
+#logoSenacRec {
+    width: 250px;
+    margin: auto;
+    background-color: black;
 }
