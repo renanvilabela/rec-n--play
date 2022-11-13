@@ -1,9 +1,11 @@
 h1 {
     text-align: center;
     margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
 }
 
-strong {
+#senac{
     background-image: url(imagens/senacCores.jpg);
     background-size: contain;
     -webkit-background-clip: text;
@@ -12,18 +14,21 @@ strong {
 
 h2 {
     text-decoration: underline;
+    text-underline-offset: 10px;
     text-align: left;
     margin-left: 2%;
     margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main.cards {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    font-family: 'Roboto', bold;
 }
 
 main.cards section.card {
@@ -38,6 +43,21 @@ main.cards section.card {
     max-width: 200px;
     max-height: 468px;
     margin-left: 32px;
+    position: relative;
+    transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+main.cards section.card:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+main.cards section.card:hover {
+    transform: scale(1.25, 1.25);
 }
 
 main.cards section.card:first-child {
@@ -89,6 +109,10 @@ main.cards section.card.quarta button {
 }
 
 main.cards section.card.quarta {
+    box-shadow: 10px 10px 25px -15px #57d83e;
+}
+
+main.cards section.card.quarta:after {
     box-shadow: 20px 20px 50px -30px #57d83e;
 }
 
@@ -104,7 +128,11 @@ main.cards section.card.quinta button {
 }
 
 main.cards section.card.quinta {
-    box-shadow: 20px 20px 50px -30px rgb(255, 0, 150);
+    box-shadow: 10px 10px 25px -15px #FF0096;
+}
+
+main.cards section.card.quinta:after {
+    box-shadow: 20px 20px 50px -30px #FF0096;
 }
 
 /* Sexta-Feira */
@@ -119,6 +147,10 @@ main.cards section.card.sexta button {
 }
 
 main.cards section.card.sexta {
+    box-shadow: 10px 10px 25px -15px #CF00FF;
+}
+
+main.cards section.card.sexta:after {
     box-shadow: 20px 20px 50px -30px #CF00FF;
 }
 
@@ -134,6 +166,10 @@ main.cards section.card.sabado button {
 }
 
 main.cards section.card.sabado {
+    box-shadow: 10px 10px 25px -15px #FF5600;
+}
+
+main.cards section.card.sabado:after {
     box-shadow: 20px 20px 50px -30px #FF5600;
 }
 
@@ -164,26 +200,26 @@ main.cards section.card.sabado {
 
     main.cards section.card.quarta {
         margin: 32px auto;
-        min-width: 150px;
-        max-width: 270px;
+        min-width: 180px;
+        max-width: 210px;
     }
 
     main.cards section.card.quinta {
         margin: 32px auto;
-        min-width: 150px;
-        max-width: 270px;
+        min-width: 180px;
+        max-width: 210px;
     }
 
     main.cards section.card.sexta {
         margin: 32px auto;
-        min-width: 150px;
-        max-width: 270px;
+        min-width: 180px;
+        max-width: 210px;
     }
 
     main.cards section.card.sabado {
         margin: 32px auto;
-        min-width: 150px;
-        max-width: 270px;
+        min-width: 180px;
+        max-width: 210px;
     }
 
     main.cards section.card:last-child {
