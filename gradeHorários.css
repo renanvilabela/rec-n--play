@@ -40,7 +40,7 @@ main.cards section.card {
     padding: 1rem 1.5rem;
     border-radius: 8px;
     min-width: 150px;
-    max-width: 200px;
+    max-width: 230px;
     max-height: 468px;
     margin-left: 32px;
     position: relative;
@@ -171,6 +171,22 @@ main.cards section.card.sabado {
 
 main.cards section.card.sabado:after {
     box-shadow: 20px 20px 50px -30px #FF5600;
+}
+
+/* Botão */
+
+#botao {
+    text-align: center;
+}
+
+#botao button {
+    width: 125px;
+    height: 40px;
+    background-color: #CF00FF;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Responsividade */
