@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'roboto', bold;
     padding: 0;
     scroll-behavior: smooth;
 }
@@ -14,24 +14,59 @@ body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/13/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 850px;
+    min-height: auto;
     position: relative;
 }
 
+#logoShowMe {
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
 #base {
-    background-color: black;
-    margin: 70px auto;
-    width: 90%;
+    background-color: #000000;
+    margin: 10px auto;
+    min-width: auto;
+    max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    min-height: 600px;
+    min-height: 400px;
     border: 2px solid #ffff;
     border-radius: 20px;
     color: white;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 750px) {
     body {
-        height: 1000px;
+        height: auto;
+        background-image: linear-gradient(to bottom, #616161, #575757, #474747, #313131, #000000);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+}
+
+hr {
+    margin: 20px auto;
+    width: 50%;
+    display: block;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#logoSenacRec {
+    width: 250px;
+    margin: auto;
+    background-color: black;
 }
