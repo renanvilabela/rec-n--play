@@ -16,7 +16,7 @@ h1 {
     background-image: linear-gradient(to top violet indigo);
     text-align: center;
     font-family: 'roboto', bold;
-    color: rgb(120, 37, 179);
+    color: rgb(0, 253, 0);
 }
 
 div {
@@ -34,7 +34,7 @@ article{
 article h2{
     display: block;
     text-align: center;
-    color: rgb(120, 37, 179);;
+    color: rgb(0, 253, 0);
     font-family: 'roboto', bold;
 }
 
@@ -53,4 +53,8 @@ footer h2{
     color: rgb(120, 37, 179);
     text-align: center;
     align-items: center;
+}
+
+@media screen max-width 400px {
+    
 }
