@@ -36,15 +36,29 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: rgb(59, 59, 59);
-    padding: 1rem 1.5rem;
+    background: #3b3b3b;
+    padding: 15px;
     border-radius: 8px;
     min-width: 150px;
     max-width: 230px;
-    max-height: 468px;
+    max-height: 300px;
     margin-left: 32px;
     position: relative;
     transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+main.cards section.card span {
+    overflow-y: scroll;
+}
+
+main.cards section.card span::-webkit-scrollbar {
+    width: 6px;
+    /* width of the entire scrollbar */
+}
+
+main.cards section.card span::-webkit-scrollbar-track {
+    background: #3b3b3b;
+        /* color of the tracking area */
 }
 
 main.cards section.card:after {
@@ -97,10 +111,29 @@ main.cards section.card button {
     margin-bottom: 16px 0;
 }
 
+/* Projetos */
+
+main.cards section.card.projeto {
+    border: 2px solid #1900fd;
+}
+
+main.cards section.card.projeto button {
+    background: linear-gradient(to right, #FF5600, #DFCBFF);
+    color: black;
+}
+
+main.cards section.card.projeto {
+    box-shadow: 10px 10px 25px -15px #1900fd;
+}
+
+main.cards section.card.projeto:after {
+    box-shadow: 20px 20px 50px -30px #1900fd;
+}
+
 /* Quarta Feira */
 
 main.cards section.card.quarta {
-    border: 2px solid rgb(0, 253, 0);
+    border: 2px solid #00fd00;
 }
 
 main.cards section.card.quarta button {
@@ -138,7 +171,7 @@ main.cards section.card.quinta:after {
 /* Sexta-Feira */
 
 main.cards section.card.sexta {
-    border: 2px solid rgb(207, 0, 255);
+    border: 2px solid #cf00ff;
 }
 
 main.cards section.card.sexta button {
@@ -157,7 +190,7 @@ main.cards section.card.sexta:after {
 /* Sábado */
 
 main.cards section.card.sabado {
-    border: 2px solid rgb(255, 86, 0);
+    border: 2px solid #ff5600;
 }
 
 main.cards section.card.sabado button {
@@ -182,10 +215,11 @@ main.cards section.card.sabado:after {
 #botao button {
     width: 125px;
     height: 40px;
-    background-color: #CF00FF;
-    color: white;
-    border: 1px solid white;
+    background-color: indigo;
+    border: 1px solid indigo;
     border-radius: 10px;
+    font-family: 'roboto', bold;
+    color: white;
     cursor: pointer;
 }
 
@@ -213,6 +247,12 @@ main.cards section.card.sabado:after {
         min-width: 150px;
         max-width: 270px;
     }
+
+    main.cards section.card.projeto {
+         margin: 32px auto;
+        min-width: 180px;
+        max-width: 210px;
+     }
 
     main.cards section.card.quarta {
         margin: 32px auto;
