@@ -18,6 +18,24 @@ body {
     position: relative;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+    /* color of the tracking area */
+    border: 1px solid indigo;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: indigo;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
 #logoShowMe {
     width: 200px;
     height: 100px;
